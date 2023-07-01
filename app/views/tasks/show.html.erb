@@ -1,0 +1,13 @@
+<h1><%= @task.title.capitalize %></h1>
+
+<div class="border-bottom pb-3 mb-3">
+  <div class="alert alert-secondary">
+    <%= @task.details %>
+  </div>
+
+  <%= raw @task.completed == true ? "<i class=\"fa-regular fa-square-check\"></i> This task is completed" : "<i class=\"fa-regular fa-square\"></i> This task is not completed yet" %>
+</div>
+
+<%= link_to tasks_path do %>
+  <i class="fa-solid fa-list-check"></i> Back to list
+<% end %>

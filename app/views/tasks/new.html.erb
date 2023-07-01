@@ -1,0 +1,8 @@
+<h1>New task</h1>
+<div class="border-bottom pb-3 mb-3">
+  <%= render 'form', task: @task %>
+</div>
+
+<%= link_to tasks_path do %>
+  <i class="fa-solid fa-list-check"></i> Back to list
+<% end %>
