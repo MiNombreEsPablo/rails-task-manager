@@ -1,6 +1,6 @@
-<h1>New task</h1>
+<h1>Edit <%= @task.title.capitalize %></h1>
 <div class="border-bottom pb-3 mb-3">
-  <%= render 'form', task: Task.new %>
+  <%= render 'form', task: @task %>
 </div>
 
 <%= link_to tasks_path do %>

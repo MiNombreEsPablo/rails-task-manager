@@ -1,4 +1,9 @@
-<h1><%= @task.title.capitalize %></h1>
+<div class="d-flex justify-content-between mt-3 mb-3">
+  <h1><%= @task.title.capitalize %></h1>
+  <%= link_to edit_task_path, class: "btn btn-light" do %>
+    <i class="fa-regular fa-pen-to-square"></i> Edit this task
+  <% end %>
+</div>
 
 <div class="border-bottom pb-3 mb-3">
   <div class="alert alert-secondary">
